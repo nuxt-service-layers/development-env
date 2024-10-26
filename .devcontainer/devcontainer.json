@@ -1,0 +1,39 @@
+{
+	"name": "Veloris CMS Dev Workspace",
+	"build": {
+		"dockerfile": "./Dockerfile",
+		"context": ""
+	},
+
+	"runArgs": ["--interactive", "--tty"],
+	"postAttachCommand": "/usr/local/bin/startup.sh",
+	"remoteUser": "root",
+	"forwardPorts": [3000],
+	"workspaceFolder": "/app",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"amodio.tsl-problem-matcher",
+				"antfu.goto-alias",
+				"christian-kohler.npm-intellisense",
+				"christian-kohler.path-intellisense",
+				"codypwakeford.nuxt-component-docs",
+				"ecmel.vscode-html-css",
+				"esbenp.prettier-vscode",
+				"formulahendry.auto-rename-tag",
+				"mhutchie.git-graph",
+				"ms-azuretools.vscode-docker",
+				"ms-vscode.cpptools",
+				"ms-vscode.vscode-typescript-next",
+				"ms-vsliveshare.vsliveshare",
+				"pranaygp.vscode-css-peek",
+				"sidthesloth.html5-boilerplate",
+				"skyboost.nuxt-3-goto",
+				"tal7aouy.icons",
+				"tyriar.luna-paint",
+				"vue.volar",
+				"yoavbls.pretty-ts-errors"
+			]
+		}
+	}
+}
